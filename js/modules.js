@@ -433,7 +433,7 @@ var MyCloudPlayersModule = {
 var PornhubModule = {
     canHandleUrl: function(url) {
         var validPatterns = [
-            "^https?://(www\\.)?pornhub\\.com/view_video"
+            "^https?://([^\\.]+\\.)?pornhub\\.com/view_video"
         ];
         return urlMatchesOneOfPatterns(url, validPatterns);
     },
